@@ -1,0 +1,79 @@
+nav-item:hover {
+  color: #ff0054;
+}
+
+.products-grid {
+  display: grid;
+  max-width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 35px 35px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+}
+
+.product-card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.product-image {
+  max-height: 50%;
+  object-fit: contain;
+}
+
+.add-to-cart {
+  display: block;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  width: 110px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #4b18a2;
+}
+
+.add-to-cart:hover {
+  color: #ff0054;
+}
+
+.cart-badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0 5px;
+  font-size: 12px;
+  margin-left: -30px;
+  margin-top: -20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.carousel {
+  width: 80%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+  border: 1px solid #ddd; /* Optional, for visualization */
+  padding: 10px; /* Optional, for visualization */
+}
+
+.carousel-item {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Adjust as needed */
+  object-fit: contain; /* Ensures the image fits within the container */
+}
